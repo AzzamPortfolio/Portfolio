@@ -48,12 +48,45 @@ All complete Excel models, one-pagers, ESG models, and EViews files are stored o
 ---
 
 ## ⭐ Featured Files
-- `financial-models/DCF_Valuation.xlsx`  
-- `financial-models/LBO_Model.xlsx`  
-- `one-pager/ESG_Screening_Summary.pdf`  
-- `one-pager/AssetValuation_OnePager.html`  
-- `statistical/EViews_Forecast_Model.wf1`  
-- `statistical/ForecastAccuracy_Analysis.pdf`  
+
+### **1. DCF Valuation Model**
+A full investor-grade discounted cash flow model including forecast schedules, WACC, terminal value, and sensitivity analysis.
+
+🔗 **[DCF VALUATION MODEL.xlsx](https://github.com/AzzamPortfolio/Finance-Portfolio/blob/64c6a484be201c049d9243f62e05f26f056ee2f7/Financial%20Models/A.%20Core%20Corporate%20Finance%20Models/3.%20DCF%20Valuation/DCF%20VALUATION%20MODEL.xlsx)**  
+📁 *Financial Models → A. Core Corporate Finance Models → 3. DCF Valuation*
+
+---
+
+### **2. LBO SaaS Model**
+A leveraged buyout model tailored for a SaaS business, including debt schedules, IRR/MOIC analysis, and exit scenarios.
+
+🔗 **[LBO SaaS.xlsx](https://github.com/AzzamPortfolio/Finance-Portfolio/blob/64c6a484be201c049d9243f62e05f26f056ee2f7/Financial%20Models/A.%20Core%20Corporate%20Finance%20Models/5.%20LBO/LBO%20SaaS.xlsx)**  
+📁 *Financial Models → A. Core Corporate Finance Models → 5. LBO*
+
+---
+
+### **3. Asset Re-Evaluation Model**
+A valuation model for re-evaluating asset useful life and fair value under policy and technical justification (ITDC case).
+
+🔗 **[Asset ReEval.xlsx](https://github.com/AzzamPortfolio/Finance-Portfolio/blob/64c6a484be201c049d9243f62e05f26f056ee2f7/Financial%20Models/A.%20Core%20Corporate%20Finance%20Models/2.%20Asset%20Valuation/Asset%20ReEval.xlsx)**  
+📁 *Financial Models → A. Core Corporate Finance Models → 2. Asset Valuation*
+
+---
+
+### **4. Feasibility Study – Elektromedis**
+A project feasibility and investment appraisal model (CAPEX, OPEX, NPV/IRR, sensitivity).
+
+🔗 **[FS Elektromedis.xlsx](https://github.com/AzzamPortfolio/Finance-Portfolio/blob/64c6a484be201c049d9243f62e05f26f056ee2f7/Financial%20Models/B.%20Project%20%26%20Investment%20Analysis/1.%20FS%20Elektromedis.xlsx)**  
+📁 *Financial Models → B. Project & Investment Analysis → 1. FS Elektromedis*
+
+---
+
+### **5. ESG Project – CIMB Pro-Forma Model**
+An ESG-aligned pro-forma model for a blended finance / green investment case (CIMB Niaga).
+
+🔗 **[CIMB - Pro-Forma.xlsx](https://github.com/AzzamPortfolio/Finance-Portfolio/blob/64c6a484be201c049d9243f62e05f26f056ee2f7/Financial%20Models/C.%20Sustainability%20%26%20ESG/CIMB%20-%20Pro-Forma.xlsx)**  
+📁 *Financial Models → C. Sustainability & ESG → CIMB - Pro-Forma*
+  
 
 ---
 
