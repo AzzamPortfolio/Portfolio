@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TymeBank - Africa's First Profitable Digital Bank | One-Pager</title>
+    <style>
+        :root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  /* RGB versions for opacity control */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  /* Background color tokens (Light Mode) */
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+  /* Semantic Color Tokens (Light Mode) */
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  /* Custom TymeBank colors */
+  --tymebank-primary: #0A4D68;
+  --tymebank-secondary: #05BFDB;
+  --tymebank-accent: #00D9FF;
+  --tymebank-dark: #041E3A;
+  --tymebank-light: #E8F7FA;
+  --gradient-primary: linear-gradient(135deg, #0A4D68 0%, #05BFDB 100%);
+  --gradient-accent: linear-gradient(135deg, #05BFDB 0%, #00D9FF 100%);
+
+  /* Typography */
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --letter-spacing-tight: -0.01em;
+
+  /* Spacing */
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+
+  /* Animation */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+  }
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-base);
+    background: var(--color-background);
+    color: var(--color-text);
+    line-height: var(--line-height-normal);
+    -webkit-font-smoothing: antialiased;
+}
+
+.one-pager {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--color-surface);
+}
+
+/* Hero Section */
+.hero {
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    padding: 80px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    font-size: var(--font-size-2xl);
+    opacity: 0.95;
+    margin-bottom: 40px;
+    font-weight: var(--font-weight-normal);
+}
+
+.unicorn-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 24px 48px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.unicorn-value {
+    font-size: 72px;
+    font-weight: var(--font-weight-bold);
+    line-height: 1;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.unicorn-label {
+    font-size: var(--font-size-lg);
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: var(--font-weight-medium);
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 40px;
+}
+
+.section-title {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--tymebank-dark);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+@media (prefers-color-scheme: dark) {
+    .section-title {
+        color: var(--color-text);
+    }
+}
+
+.section-alternate {
+    background: var(--color-bg-1);
+}
+
+/* Problem Solution */
+.problem-solution-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.problem-box,
+.solution-box {
+    padding: 32px;
+    border-radius: var(--radius-lg);
+    border: 2px solid;
+}
+
+.problem-box {
+    background: rgba(239, 68, 68, 0.05);
+    border-color: rgba(239, 68, 68, 0.2);
+}
+
+.solution-box {
+    background: rgba(34, 197, 94, 0.05);
+    border-color: rgba(34, 197, 94, 0.2);
+}
+
+.box-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.box-icon {
+    font-size: 32px;
+}
+
+.box-list {
+    list-style: none;
+}
+
+.box-list li {
+    padding: 12px 0;
+    padding-left: 32px;
+    position: relative;
+    font-size: var(--font-size-lg);
+}
+
+.problem-box .box-list li::before {
+    content: '✗';
+    position: absolute;
+    left: 0;
+    color: #EF4444;
+    font-weight: var(--font-weight-bold);
+}
+
+.solution-box .box-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #22C55E;
+    font-weight: var(--font-weight-bold);
+}
+
+/* Metrics Grid */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.metric-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-lg);
+    padding: 32px 24px;
+    text-align: center;
+    transition: all var(--duration-normal) var(--ease-standard);
+    cursor: pointer;
+}
+
+.metric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--tymebank-secondary);
+}
+
+.metric-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.metric-value {
+    font-size: 48px;
+    font-weight: var(--font-weight-bold);
+    color: var(--tymebank-primary);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .metric-value {
+        color: var(--tymebank-secondary);
+    }
+}
+
+.metric-label {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text);
+    margin-bottom: 4px;
+}
+
+.metric-detail {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+/* Advantages */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.advantage-card {
+    background: var(--gradient-accent);
+    color: var(--color-white);
+    padding: 28px;
+    border-radius: var(--radius-lg);
+    transition: all var(--duration-normal) var(--ease-standard);
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.advantage-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(5, 191, 219, 0.3);
+    border-color: var(--color-white);
+}
+
+.advantage-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 12px;
+}
+
+.advantage-description {
+    font-size: var(--font-size-base);
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+/* Market Opportunity */
+.market-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.market-stat {
+    text-align: center;
+    padding: 32px;
+    background: var(--color-surface);
+    border: 2px solid var(--color-card-border);
+    border-radius: var(--radius-lg);
+}
+
+.market-stat-value {
+    font-size: 56px;
+    font-weight: var(--font-weight-bold);
+    color: var(--tymebank-secondary);
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.market-stat-label {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+}
+
+.market-highlights {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.market-highlight {
+    background: var(--color-bg-3);
+    padding: 20px;
+    border-radius: var(--radius-base);
+    text-align: center;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.market-highlight-value {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text);
+    margin-bottom: 4px;
+}
+
+.market-highlight-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+/* Why It Matters */
+.why-matters-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.why-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.why-card:hover {
+    border-color: var(--tymebank-secondary);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.why-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--tymebank-primary);
+    margin-bottom: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .why-title {
+        color: var(--tymebank-secondary);
+    }
+}
+
+.why-description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+}
+
+/* Timeline */
+.timeline {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.timeline-item {
+    background: var(--color-surface);
+    border: 2px solid var(--color-card-border);
+    border-radius: var(--radius-lg);
+    padding: 24px 20px;
+    text-align: center;
+    transition: all var(--duration-normal) var(--ease-standard);
+    position: relative;
+}
+
+.timeline-item:hover {
+    border-color: var(--tymebank-secondary);
+    transform: scale(1.05);
+}
+
+.timeline-year {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--tymebank-primary);
+    margin-bottom: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .timeline-year {
+        color: var(--tymebank-secondary);
+    }
+}
+
+.timeline-event {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+/* Call to Action */
+.cta-section {
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.cta-text {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 16px;
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+.cta-subtext {
+    font-size: var(--font-size-lg);
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+    background: var(--tymebank-dark);
+    color: var(--color-white);
+    padding: 32px 40px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: var(--font-size-sm);
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .timeline-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .market-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 24px;
+    }
+    
+    .logo {
+        font-size: 36px;
+    }
+    
+    .unicorn-value {
+        font-size: 56px;
+    }
+    
+    .section {
+        padding: 40px 24px;
+    }
+    
+    .section-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .problem-solution-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .why-matters-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .market-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .market-highlights {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    .one-pager {
+        max-width: 100%;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+    
+    .metric-card,
+    .advantage-card,
+    .why-card {
+        page-break-inside: avoid;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="one-pager">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="logo">TymeBank</div>
+                <div class="tagline">Africa's First Profitable Digital Bank</div>
+                <div class="unicorn-badge">
+                    <div class="unicorn-value">$1.5B</div>
+                    <div class="unicorn-label">Unicorn Valuation</div>
+                </div>
+                <div style="margin-top: 24px; font-size: var(--font-size-base); opacity: 0.9;">
+                    December 2024 | 10.7M Customers | First Profitable Digital Bank in Africa
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem & Solution -->
+        <section class="section">
+            <h2 class="section-title">The Problem &amp; Solution</h2>
+            <div class="problem-solution-grid">
+                <div class="problem-box">
+                    <div class="box-title">
+                        <span class="box-icon">⚠️</span>
+                        <span>The Challenge</span>
+                    </div>
+                    <ul class="box-list">
+                        <li>Millions underbanked</li>
+                        <li>High fees (R60-300/month)</li>
+                        <li>Inaccessible branches</li>
+                        <li>SME financing gap</li>
+                        <li>Digital trust barrier</li>
+                    </ul>
+                </div>
+                <div class="solution-box">
+                    <div class="box-title">
+                        <span class="box-icon">💡</span>
+                        <span>TymeBank's Answer</span>
+                    </div>
+                    <ul class="box-list">
+                        <li>Zero monthly fees</li>
+                        <li>5-minute account opening</li>
+                        <li>1,000+ kiosks nationwide</li>
+                        <li>Instant debit cards</li>
+                        <li>Hybrid digital + physical</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- By The Numbers -->
+        <section class="section section-alternate">
+            <h2 class="section-title">By The Numbers</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">👥</div>
+                    <div class="metric-value">10.7M</div>
+                    <div class="metric-label">Customers</div>
+                    <div class="metric-detail">in under 6 years</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">💎</div>
+                    <div class="metric-value">$1.5B</div>
+                    <div class="metric-label">Valuation</div>
+                    <div class="metric-detail">December 2024</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">📈</div>
+                    <div class="metric-value">534%</div>
+                    <div class="metric-label">Revenue Growth</div>
+                    <div class="metric-detail">2020-2023</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">💰</div>
+                    <div class="metric-value">$385M</div>
+                    <div class="metric-label">Deposits</div>
+                    <div class="metric-detail">R7 billion</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">✅</div>
+                    <div class="metric-value">First</div>
+                    <div class="metric-label">Profitability</div>
+                    <div class="metric-detail">Digital bank in Africa</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">🏪</div>
+                    <div class="metric-value">1,000+</div>
+                    <div class="metric-label">Kiosks</div>
+                    <div class="metric-detail">Retail touchpoints</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitive Edge -->
+        <section class="section">
+            <h2 class="section-title">The Competitive Edge</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-title">🏆 Only Black-Owned Commercial Bank</div>
+                    <div class="advantage-description">Aligned with government priorities</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-title">🌍 Superior Distribution</div>
+                    <div class="advantage-description">1,000+ kiosks vs expensive branches</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-title">💪 Cost Leadership</div>
+                    <div class="advantage-description">60-80% lower overhead than banks</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-title">🚀 Product Innovation</div>
+                    <div class="advantage-description">5-min onboarding, instant cards</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-title">💵 Proven Profitability</div>
+                    <div class="advantage-description">First profitable digital bank in Africa</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Opportunity -->
+        <section class="section section-alternate">
+            <h2 class="section-title">Market Opportunity</h2>
+            <div class="market-stats">
+                <div class="market-stat">
+                    <div class="market-stat-value">$2.92B</div>
+                    <div class="market-stat-label">Embedded Finance Market (2025)</div>
+                </div>
+                <div class="market-stat">
+                    <div class="market-stat-value">11.1%</div>
+                    <div class="market-stat-label">Annual Growth Rate</div>
+                </div>
+            </div>
+            <div class="market-highlights">
+                <div class="market-highlight">
+                    <div class="market-highlight-value">140+</div>
+                    <div class="market-highlight-label">SA Fintech Companies</div>
+                </div>
+                <div class="market-highlight">
+                    <div class="market-highlight-value">90%+</div>
+                    <div class="market-highlight-label">Mobile Penetration</div>
+                </div>
+                <div class="market-highlight">
+                    <div class="market-highlight-value">R100B</div>
+                    <div class="market-highlight-label">PayShap Processed</div>
+                </div>
+                <div class="market-highlight">
+                    <div class="market-highlight-value">Millions</div>
+                    <div class="market-highlight-label">Underbanked</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why It Matters -->
+        <section class="section">
+            <h2 class="section-title">Why It Matters</h2>
+            <div class="why-matters-grid">
+                <div class="why-card">
+                    <div class="why-title">📊 Massive TAM</div>
+                    <div class="why-description">Millions underbanked + 90% mobile penetration creates unprecedented market opportunity in South Africa and beyond</div>
+                </div>
+                <div class="why-card">
+                    <div class="why-title">✓ Proven Model</div>
+                    <div class="why-description">10.7M customers in 6 years validates product-market fit and demonstrates scalable customer acquisition</div>
+                </div>
+                <div class="why-card">
+                    <div class="why-title">♻️ Sustainable</div>
+                    <div class="why-description">First profitable digital bank in Africa - superior unit economics with 60-80% lower overhead than traditional banks</div>
+                </div>
+                <div class="why-card">
+                    <div class="why-title">🌏 Global Ambition</div>
+                    <div class="why-description">Expanding to SE Asia, NYSE IPO planned for 2028 - positioned for international growth</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="section section-alternate">
+            <h2 class="section-title">Journey to Unicorn Status</h2>
+            <div class="timeline">
+                <div class="timeline-grid">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-event">Founded</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-event">Revenue $10.67M</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-event">First Profit + $67.70M Revenue (534% growth)</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-event">10.7M Customers + $1.5B Unicorn</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-event">$250M Series D (Nubank led)</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-event">SE Asia Expansion</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2028</div>
+                        <div class="timeline-event">NYSE IPO Planned</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">Future</div>
+                        <div class="timeline-event">Global Fintech Leader</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-text">Ready to be part of Africa's fintech revolution?</div>
+            <div class="cta-subtext">
+                TymeBank is redefining digital banking across emerging markets - combining innovation, profitability, and massive market potential.
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-text">
+                Portfolio One-Pager | TymeBank Analysis 2025 | Prepared for Professional Applications
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
