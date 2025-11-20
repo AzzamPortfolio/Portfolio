@@ -87,5 +87,5 @@ An ESG-aligned pro-forma model for a blended finance / green investment case (CI
 ---
 
 ## 📬 Contact
-**azzam24.job@gmail.com**  
-**linkedin.com/in/azzamabdullah24**
+[📧 Email](mailto:azzam24.job@gmail.com)  
+[🔗 LinkedIn](https://www.linkedin.com/in/azzamabdullah24)
